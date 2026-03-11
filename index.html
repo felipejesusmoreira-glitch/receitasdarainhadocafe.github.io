@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas da Rainha do Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section id="home" class="aba ativa">
+            <h1>RECEITAS DA RAINHA DO CAFÉ</h1>
+            <p>Sugestões de refeições diárias diferentes para todos os gostos.</p>
+            <button class="btn-laranja" onclick="mudarAba('shakshuka')">DESCOBRIR AGORA</button>
+        </section>
+
+        <section id="shakshuka" class="aba">
+            <h2>MAKSHUKA (SHAKSHUKA)</h2>
+            <p>Ovos cozidos num molho de tomate vibrante e bem temperado.</p>
+            <div class="receita-box">
+                <h3>Ingredientes Base:</h3>
+                <ul>
+                    <li>1 cebola e 1 pimento picados</li>
+                    <li>2 dentes de alho</li>
+                    <li>1 lata de tomate pelado</li>
+                </ul>
+            </div>
+            <button class="btn-laranja" onclick="mudarAba('congee')">DESCOBRIR OUTRO AGORA!</button>
+        </section>
+
+        <section id="congee" class="aba">
+            <h2>CONGEE (CHINA)</h2>
+            <p>Um mingau de arroz salgado, a cura para dias de frio.</p>
+            <div class="receita-box">
+                <h3>Como fazer:</h3>
+                <p>1 xícara de arroz para 7 de água. Cozinhe por 45 min até desmanchar.</p>
+            </div>
+            <button class="btn-laranja" onclick="mudarAba('blue-milk')">PROVAR BEBIDA GALÁCTICA</button>
+        </section>
+
+        <section id="blue-milk" class="aba">
+            <h2>BLUE MILK (STAR WARS)</h2>
+            <p>A bebida icónica de Tatooine na sua cozinha.</p>
+            <div class="receita-box">
+                <ul>
+                    <li>Leite de coco e sumo de abacaxi</li>
+                    <li>Extrato de baunilha e açúcar</li>
+                    <li>2 gotas de corante azul</li>
+                </ul>
+            </div>
+            <button class="btn-laranja" onclick="mudarAba('home')">VOLTAR AO INÍCIO</button>
+        </section>
+    </div>
+
+    <script>
+        function mudarAba(idAba) {
+            // Remove a classe 'ativa' de todas as abas
+            const abas = document.querySelectorAll('.aba');
+            abas.forEach(aba => aba.classList.remove('ativa'));
+
+            // Adiciona a classe 'ativa' apenas à aba clicada
+            document.getElementById(idAba).classList.add('ativa');
+            
+            // Garante que a página volta ao topo na troca
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
