@@ -23,11 +23,6 @@ body {
     border: 1px solid #ffe0b2;
 }
 
-.aba.ativa {
-    display: block;
-    animation: surgindo 0.4s ease-out;
-}
-
 h1 { color: #3e2723; font-size: 22px; margin-bottom: 20px; }
 h2 { color: #e65100; font-size: 20px; text-transform: uppercase; }
 
