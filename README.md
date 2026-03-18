@@ -1,10 +1,10 @@
 Feito por:
-Felipe Kauã 
-Guilherme Mathias 
-Débora Marinho 
-Matheus Neves
-João Vitor Leopoldino
-Eduardo Pereira 
-Nicole
+Felipe Kauã;
+Guilherme Mathias;
+Débora Marinho;
+Matheus Neves;
+João Vitor Leopoldino;
+Eduardo Pereira;
+Nicole.
 
-Turma: 2ºC
+Turma: 2ºC.
