@@ -14,13 +14,18 @@ body {
 }
 
 .aba {
-    display: none; 
+    display: none;
     background: #ffffff;
     padding: 40px;
     border-radius: 30px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     text-align: center;
     border: 1px solid #ffe0b2;
+}
+
+.aba.ativa {
+    display: block;
+    animation: surgindo 0.4s ease-out;
 }
 
 h1 { color: #3e2723; font-size: 22px; margin-bottom: 20px; }
@@ -37,12 +42,10 @@ h2 { color: #e65100; font-size: 20px; text-transform: uppercase; }
     width: 100%;
     margin-top: 25px;
     font-size: 14px;
-    transition: background 0.3s, transform 0.2s;
 }
 
 .btn-laranja:hover {
     background-color: #ff7b00;
-    transform: translateY(-2px);
 }
 
 .receita-box {
@@ -52,3 +55,8 @@ h2 { color: #e65100; font-size: 20px; text-transform: uppercase; }
     text-align: left;
     margin-top: 20px;
 }
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; color: #5d4037; }
+
+
